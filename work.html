@@ -1,0 +1,49 @@
+---
+layout: default
+title: Work
+permalink: /work/
+---
+
+<hgroup class="intro">
+  <h1 class="intro__title">Work</h1>
+  <h2 class="intro__subtitle">A collection of my favorite projects over the
+  past few years.</h2>
+</hgroup>
+
+<section class="content__section">
+  <div class="card-list">
+    {% assign published_projects = site.projects | where: "published","true" %}
+    {% assign draft_projects = site.projects | where: "published","draft" %}
+
+    {% for project in published_projects %}
+      <div class="card-item">
+        <a href="{{ project.url | prepend: site.baseurl }}">
+          <div class="card__bg" style="background-color: #{{project.heroColor}}">
+            <img src="{{ project.hero }}" />
+          </div>
+          <div class="card__cover">
+            <span class="meta-categories">{{ project.categories | join: ', ' }}</span>
+            <h2>
+              {{ project.title | escape }}
+            </h2>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+
+    {% for project in draft_projects %}
+    <div class="card-item card--draft">
+      <div class="card__bg">
+      </div>
+      <div class="card__cover">
+        <span class="meta-categories">{{ project.categories | join: ', ' }}</span>
+        <h2>{{ project.title | escape }}</h2>
+      </div>
+      <div class="card__cover cover--draft">
+        <h3>Coming Soon</h3>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>
