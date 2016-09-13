@@ -122,6 +122,17 @@ blockquote {
  * Layout and grid
  */
 
+@mixin clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
 @mixin box-sizing($box) {
   -webkit-box-sizing: $box;
      -moz-box-sizing: $box;
@@ -166,7 +177,7 @@ blockquote {
 }
 
 .content {
-  @include flex(1 0 0);
+  @include flex(1 0 auto);
   padding-top: $spacing-unit;
 
   @media screen and (min-width: $on-laptop) {
@@ -252,6 +263,7 @@ blockquote {
   }
 
 .site__footer {
+  @include flex(none);
   padding-top: $spacing-unit*2;
   padding-bottom: $spacing-unit*2;
   background-color: $grey-color-light;
