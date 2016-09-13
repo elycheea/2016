@@ -1,14 +1,16 @@
 ---
-layout: default
+layout: master
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+{% include header.html hasContent="true" %}
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+<!-- content start -->
+<div class="content content--home">
+  <div class="content__wrapper">
+		{{ content }}
+	</div>
+</div>
 
-</article>
+<!-- content end -->
+
+<!-- {% include scripts.html %} -->

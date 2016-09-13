@@ -1,13 +1,13 @@
 <header class="site__header header--{{ page.layout }}">
 	<div class="content__wrapper">
-		<h1 class="site__title"><span class="hide">Elysia Hwang.</span><a href="{{site.url}}">eh.</a></h1>
+		<h1 class="site__title"><span class="hide">Elysia Hwang.</span><a href="{{ site.baseurl }}/">eh.</a></h1>
 
 		<nav class="header__menu">
 			{% if include.hasContent == 'true' %}
-			<a class="menu__link">Home</a> /
+			<a class="menu__link" href="{{ site.baseurl }}/">Home</a> /
 			{% endif %}
-			<a class="menu__link" href="{{site.url}}/work">Work</a> /
-			<a class="menu__link" href="{{site.url}}/about">About</a>
+			<a class="menu__link" href="{{ site.baseurl }}/work">Work</a> /
+			<a class="menu__link" href="{{ site.baseurl }}/about">About</a>
 		</nav>
 	</div>
 </header>
