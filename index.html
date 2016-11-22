@@ -15,8 +15,12 @@ layout: default
       {% if project.published == true %}
       <div class="card-item">
         <a href="{{ project.url | prepend: site.baseurl }}">
-          <div class="card__bg" style="background-color: #{{project.heroColor}}">
+          <div class="card__bg" style="background-color: #{{project.heroColor}};">
+            {% if project.align == '' %}
             <img src="{{ project.hero }}" />
+            {% else if %}
+            <img src="{{ project.hero }}" style="{{project.align}}: 0;"/>
+            {% endif %}
           </div>
           <div class="card__cover">
             <span class="meta-categories">{{ project.categories | join: ', ' }}</span>

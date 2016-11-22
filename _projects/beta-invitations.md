@@ -7,6 +7,7 @@ categories:
 date: April 2015
 hero: /assets/projects/beta-hero.png
 heroColor: 1B232B
+align: bottom
 role: "Design and development of email templates and landing site. Create
 graphics for use in emails."
 skills:
