@@ -15,13 +15,15 @@ layout: default
       {% if project.published == true %}
       <div class="card-item">
         <a href="{{ project.url | prepend: site.baseurl }}">
-          <div class="card__bg" style="background-color: #{{project.heroColor}};">
-            {% if project.align == '' %}
+          {% if project.align %}
+          <div class="card__bg align--{{project.align}}" style="background-color: #{{project.heroColor}};">
             <img src="{{ project.hero }}" />
-            {% else if %}
-            <img src="{{ project.hero }}" style="{{project.align}}: 0;"/>
-            {% endif %}
           </div>
+          {% else if %}
+          <div class="card__bg align--center" style="background-color: #{{project.heroColor}};">
+            <img src="{{ project.hero }}" />
+          </div>
+          {% endif %}
           <div class="card__cover">
             <span class="meta-categories">{{ project.categories | join: ', ' }}</span>
             <h2>{{ project.title | escape }}</h2>
