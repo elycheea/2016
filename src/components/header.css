@@ -1,0 +1,16 @@
+.logomark {
+  display: flex;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__text {
+  font-size: 1.5em;
+  font-weight: 600;
+  transform: translate(0.125rem, .5rem) rotate(-22.5deg);
+  color: white;
+}
