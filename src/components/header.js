@@ -4,27 +4,28 @@ import React from "react";
 
 import "./header.css";
 
+const ListLink = props => (
+  <li className="nav__item">
+    <Link to={props.to} className="nav__link">{props.children}</Link>
+  </li>
+)
+
 const Header = ({ siteTitle }) => (
   <header
   >
-    <nav
-      // style={{
-      //   margin: `0 auto`,
-      //   maxWidth: 960,
-      //   padding: `1.45rem 1.0875rem`,
-      // }}
-    >
+    <nav className="navbar">
 
       <Link
         to="/"
         className="logomark"
-        style={{
-          // color: `white`,
-          textDecoration: `none`,
-        }}
       >
         <span className="logo__text">eh.</span>
       </Link>
+
+      <ul className="nav__menu">
+        <ListLink to="/work">Work</ListLink>
+        <ListLink to="/about">About</ListLink>
+      </ul>
     </nav>
   </header>
 )

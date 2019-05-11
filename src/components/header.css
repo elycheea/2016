@@ -1,3 +1,16 @@
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 48rem) {
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1em;
+  }
+}
+
 .logomark {
   display: flex;
   height: 4.5rem;
@@ -6,6 +19,7 @@
   background-color: black;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logo__text {
@@ -13,4 +27,30 @@
   font-weight: 600;
   transform: translate(0.125rem, .5rem) rotate(-22.5deg);
   color: white;
+}
+
+/* Menu links */
+.nav__menu {
+  all: unset;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 48rem) {
+  .nav__menu {
+    display: grid;
+    grid-column-start: 10;
+    grid-column-end: 13;
+    /* navigation subgrid */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: inherit;
+  }
+}
+
+.nav__item {
+  display: inline-block;
+  margin-left: 2.5em;
+}
+
+.nav__link {
+  text-decoration: none;
 }
