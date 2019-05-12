@@ -3,14 +3,6 @@
   align-items: center;
 }
 
-@media screen and (min-width: 48rem) {
-  .navbar {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 1em;
-  }
-}
-
 .logomark {
   display: flex;
   height: 4.5rem;
