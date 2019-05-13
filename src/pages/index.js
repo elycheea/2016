@@ -5,6 +5,8 @@ import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
 
+import "./index.css";
+
 const IndexPage = () => (
   <StaticQuery
   query={graphql`
@@ -20,8 +22,13 @@ const IndexPage = () => (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <h1 className="title--display">{data.site.siteMetadata.title}</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
+      <div className="body--display">
+        <p className="tagline">
+          <span className="rwd-line">A designer who loves code, </span>
+          <span className="rwd-line">or a developer who loves design.</span>
+        </p>
+        <p>+ Learn more</p>
+      </div>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
       </div>

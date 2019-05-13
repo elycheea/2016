@@ -1,0 +1,16 @@
+.title--display {
+  margin-bottom: 3rem;
+  font-size: 4.5em;
+  text-transform: lowercase;
+}
+
+.body--display {
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 26em) {
+  .rwd-line {
+    display: block;
+  }
+}
+

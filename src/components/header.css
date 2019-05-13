@@ -29,7 +29,7 @@
   margin-left: auto;
 }
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48em) {
   .nav__menu {
     display: grid;
     grid-column-start: 10;
