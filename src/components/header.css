@@ -9,6 +9,8 @@
   width: 4.5rem;
   border-radius: 50%;
   background-color: black;
+  font-family: 'Space Grotesk', sans-serif;
+  text-decoration: none;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
