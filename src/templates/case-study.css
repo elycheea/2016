@@ -1,0 +1,25 @@
+/*-------------------------------------/*
+/* Metadata
+/*-------------------------------------*/
+
+.post__tag-list {
+  all: unset;
+  display: inline;
+}
+
+  .post__tag-list::before {
+    padding-right: .75em;
+    padding-left: .75em;
+    content: '/';
+  }
+
+.post__tag {
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+  .post__tag ~ .post__tag::before {
+    padding-right: .5em;
+    padding-left: .5em;
+    content: '•';
+  }
