@@ -24,6 +24,7 @@ export default ({ data }) => {
           </ul>
         }
         <h1>{frontmatter.title}</h1>
+        <h2>{frontmatter.intro}</h2>
 
         <div
           className="post-content"
@@ -42,6 +43,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM YYYY")
         path
         title
+        intro
         tags
       }
     }
