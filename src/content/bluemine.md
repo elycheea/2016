@@ -1,6 +1,6 @@
 ---
 path: '/work/bluemine'
-date: 'February 2017'
+date: '2017-02'
 title: 'Bluemine redesign'
 tags: ['product', 'design', 'development']
 ---
@@ -49,4 +49,4 @@ Throughout 2018, we continued development in two-week iterations. I continued to
 Those early changes and continued improvements to the application beyond our initial MVP allowed us to reach our yearly target of 90k users by September 2018. By the end of the year, we reached over 107k users, exceeding our target by nearly 20%.
 
 ### Lessons learned
-One of the most important lessons I learned from the Bluemine redesign is that transparency for transparency’s sake does not necessarily lead to a better experience. There were occasions when we chose to be gratuitiously transparent that ended up hurting the experience, such as providing too much information at the wrong time or by providing information to the incorrect audience. Transparency can be overwhelming, especially when presenting more information than is useful or relevant.
+One important lessons from the Bluemine redesign was that transparency for transparency’s sake does not necessarily lead to a better experience. There were occasions when we chose to be gratuitiously transparent that ended up hurting the experience, such as providing too much information at the wrong time or by providing information to the incorrect audience. Transparency can be overwhelming, especially when presenting more information than is useful or relevant.
