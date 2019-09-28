@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../components/layout/layout";
+import CaseHeader from "../components/case-header/case-header";
 
 import "./case-study.css";
 
@@ -9,28 +10,19 @@ export default ({ data }) => {
   const { markdownRemark } = data // data.markdownRemark holds content data
   const { frontmatter, html } = markdownRemark
 
-  const tags = frontmatter.tags.map((tag) => (
-    <li class="post__tag">{tag}</li>
-  ));
-
   return (
     <Layout>
-      <div>
-        <span>{frontmatter.date}</span>
-        {frontmatter.tags && 
-          // <span class="tag-separator">/</span>
-          <ul class="post__tag-list">
-            {tags}
-          </ul>
-        }
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.intro}</h2>
+      <CaseHeader
+        date={frontmatter.date}
+        tags={frontmatter.tags}
+        title={frontmatter.title}
+        intro={frontmatter.intro}
+      ></CaseHeader>
 
-        <div
-          className="post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
+      <div
+        className="post-content"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </Layout>
   )
 }
@@ -40,7 +32,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM YYYY")
+        date
         path
         title
         intro
