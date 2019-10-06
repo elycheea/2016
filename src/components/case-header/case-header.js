@@ -7,20 +7,22 @@ import "./case-header.css";
 const CaseHeader = (props) => (
   
 
-  <header>
-    <div className="post__metadata">
-      <time datetime={props.date}>{ moment(props.date).format("MMMM YYYY") }</time>
-      {props.tags && 
-        // <span class="tag-separator">/</span>
-        <ul className="post__tag-list">
-          {props.tags.map((tag, index) => (
-            <li className="post__tag" key={index}>{tag}</li>
-          ))}
-        </ul>
-      }
+  <header className="case__header">
+    <div className="post__info">
+      <div className="post__metadata">
+        <time datetime={props.date}>{ moment(props.date).format("MMMM YYYY") }</time>
+        {props.tags && 
+          // <span class="tag-separator">/</span>
+          <ul className="post__tag-list">
+            {props.tags.map((tag, index) => (
+              <li className="post__tag" key={index}>{tag}</li>
+            ))}
+          </ul>
+        }
+      </div>
+      <h1 className="post__title">{props.title}</h1>
+      <p className="post__intro">{props.intro}</p>
     </div>
-    <h1>{props.title}</h1>
-    <h2>{props.intro}</h2>
   </header>
 )
 

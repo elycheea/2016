@@ -1,9 +1,40 @@
 /*-------------------------------------/*
+/* Layout
+/*-------------------------------------*/
+.case__header {
+  display: grid;
+  grid-template-columns: [hero] 1fr [heroContent] 1fr;
+}
+
+.post__info {
+  grid-column: heroContent;
+  padding-left: 8rem;
+}
+
+/*-------------------------------------/*
+/* Content
+/*-------------------------------------*/
+
+.post__title {
+  margin-bottom: 2.5rem;
+  font-size: 3rem;;
+  font-weight: 600;
+  line-height: calc(4 / 3)
+}
+
+.post__intro {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/*-------------------------------------/*
 /* Metadata
 /*-------------------------------------*/
 
 .post__metadata {
+  margin-bottom: 2.5rem;
   font-size: 1.125rem;
+  line-height: calc(4/3);
 }
 
 .post__tag-list {
@@ -19,6 +50,7 @@
 
 .post__tag {
   display: inline-block;
+  margin-bottom: 0;
   text-transform: capitalize;
 }
 
