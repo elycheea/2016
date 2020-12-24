@@ -8,8 +8,8 @@
 title: Elysia Hwang, design developer
 description: > # this means to ignore newlines until "baseurl:"
   Elysia is a designer and front-end developer in Atlanta.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://elysiahwang.com" # the base hostname & protocol for your site
+baseurl: "/2016" # the subpath of your site, e.g. /blog
+url: "elycheea.github.io" # the base hostname & protocol for your site
 twitter_username: elycheea
 github_username:  elycheea
 

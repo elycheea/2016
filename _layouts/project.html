@@ -3,53 +3,52 @@ layout: master
 ---
 {% include header.html hasContent="true" %}
 {% if page.hero %}
-  <div class="hero-image" style="background-image: url({{ page.hero }}); background-color: #{{page.heroColor}}"></div>
+<div class="hero-image"
+  style="background-image: url({{site.baseurl}}/assets/projects/{{ page.hero }}); background-color: #{{page.heroColor}}">
+</div>
 {% endif %}
-  <div class="content">
-    <div class="content__wrapper">
-      <hgroup class="intro">
-        {% if page.noDate %}
-          {% unless page.categories == '' %}
-          <span class="meta-categories">{{ page.categories | join: ' • '}}</span>
-          {% endunless %}
-        {% else if %}
-        <span class="meta-date">{{ page.date | date: "%B %Y" }}</span
-        {% unless page.categories == '' %}
-        ><span class="meta-categories">{{ page.categories | join: ' • '}}</span
-        {% endunless %}
-        >
-        {% endif %}
-        <h1 class="intro__title">{{ page.title }}</h1>
-      </hgroup>
+<div class="content">
+  <div class="content__wrapper">
+    <hgroup class="intro">
+      {% if page.noDate %}
+      {% unless page.categories == '' %}
+      <span class="meta-categories">{{ page.categories | join: ' • '}}</span>
+      {% endunless %}
+      {% else if %}
+      <span class="meta-date">{{ page.date | date: "%B %Y" }}</span {% unless page.categories == '' %}><span
+        class="meta-categories">{{ page.categories | join: ' • '}}</span {% endunless %}>
+      {% endif %}
+      <h1 class="intro__title">{{ page.title }}</h1>
+    </hgroup>
 
-      {% if page.role or page.skills %}
-      <div class="project-details__container">
+    {% if page.role or page.skills %}
+    <div class="project-details__container">
 
-        {% if page.role %}
-        <section class="project__details">
-          <h3>Role</h3>
-          <p>{{page.role}}</p>
-        </section>
-        {% endif %}
-
-        {% if page.skills %}
-        <section class="project__details">
-          <h3>Skills & Tools</h3>
-          <ul class="skills-list">
-            {% for skill in page.skills %}
-              <li>{{ skill.title }}
-                {% if skill.for %}
-                for {{ skill.for }}
-                {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        </section>
-        {% endif %}
-
-      </div>
+      {% if page.role %}
+      <section class="project__details">
+        <h3>Role</h3>
+        <p>{{page.role}}</p>
+      </section>
       {% endif %}
 
-      {{ content }}
+      {% if page.skills %}
+      <section class="project__details">
+        <h3>Skills & Tools</h3>
+        <ul class="skills-list">
+          {% for skill in page.skills %}
+          <li>{{ skill.title }}
+            {% if skill.for %}
+            for {{ skill.for }}
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
     </div>
-	</div>
+    {% endif %}
+
+    {{ content }}
+  </div>
+</div>

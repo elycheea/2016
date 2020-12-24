@@ -5,7 +5,7 @@ categories:
   email
   landing
 date: April 2015
-hero: /assets/projects/beta-hero.png
+hero: beta-hero.png
 heroColor: 1B232B
 align: bottom
 role: "Design and development of email templates and landing site. Create
@@ -33,7 +33,7 @@ the only designer and front-end developer on the team, I soon switch over to
 development in browser.
 
 <figure class="figure--image figure--small">
-  <img src="{{ site.url }}/assets/projects/beta-sketch.png"
+  <img src="{{ site.baseurl }}/assets/projects/beta-sketch.png"
   alt="Sketches for new email template.">
   <figcaption>Sketches for new email template.</figcaption>
 </figure>
@@ -58,7 +58,7 @@ of our website. Here they can submit their emails to request access via
 TestFlight and also learn more about how the beta program works.
 
 <figure class="figure--image">
-  <img src="{{ site.url }}/assets/projects/beta-landing.png"
+  <img src="{{ site.baseurl }}/assets/projects/beta-landing.png"
   alt="The landing page for the CxAlloy TQ beta program.">
   <figcaption>The landing page for the CxAlloy TQ beta program.
     <sup class="reference"><a id="reference-2" href="#note-2">[2]</a></sup>

@@ -12,25 +12,25 @@ layout: default
   <h3 class="section__title">Selected Work</h3>
   <div class="card-list">
     {% for project in site.projects %}
-      {% if project.published == true %}
-      <div class="card-item">
-        <a href="{{ project.url | prepend: site.baseurl }}">
-          {% if project.align %}
-          <div class="card__bg align--{{project.align}}" style="background-color: #{{project.heroColor}};">
-            <img src="{{ project.hero }}" />
-          </div>
-          {% else if %}
-          <div class="card__bg align--center" style="background-color: #{{project.heroColor}};">
-            <img src="{{ project.hero }}" />
-          </div>
-          {% endif %}
-          <div class="card__cover">
-            <span class="meta-categories">{{ project.categories | join: ', ' }}</span>
-            <h2>{{ project.title | escape }}</h2>
-          </div>
-        </a>
-      </div>
-      {% endif %}
+    {% if project.published == true %}
+    <div class="card-item">
+      <a href="{{ project.url | prepend: site.baseurl }}">
+        {% if project.align %}
+        <div class="card__bg align--{{project.align}}" style="background-color: #{{project.heroColor}};">
+          <img src="{{site.baseurl}}/assets/projects/{{ project.hero }}" />
+        </div>
+        {% else if %}
+        <div class="card__bg align--center" style="background-color: #{{project.heroColor}};">
+          <img src="{{site.baseurl}}/assets/projects/{{ project.hero }}" />
+        </div>
+        {% endif %}
+        <div class="card__cover">
+          <span class="meta-categories">{{ project.categories | join: ', ' }}</span>
+          <h2>{{ project.title | escape }}</h2>
+        </div>
+      </a>
+    </div>
+    {% endif %}
     {% endfor %}
   </div>
 </section>
