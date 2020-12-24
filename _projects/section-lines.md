@@ -23,7 +23,7 @@ answered. While this information is tracked in our history table, this
 information was not available for users to view.
 
 <figure class="figure--image">
-  <img src="{{ site.url }}/assets/projects/section_lines-old.png"
+  <img src="{{ site.baseurl }}/assets/projects/section_lines-old.png"
   alt="Example of checklist section lines, including a heading and attribute.">
   <figcaption>Example of checklist section lines, including a heading line and a
   line with an attribute.</figcaption>

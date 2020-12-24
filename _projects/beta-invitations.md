@@ -33,7 +33,7 @@ the only designer and front-end developer on the team, I soon switch over to
 development in browser.
 
 <figure class="figure--image figure--small">
-  <img src="{{ site.url }}/assets/projects/beta-sketch.png"
+  <img src="{{ site.baseurl }}/assets/projects/beta-sketch.png"
   alt="Sketches for new email template.">
   <figcaption>Sketches for new email template.</figcaption>
 </figure>

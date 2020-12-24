@@ -50,7 +50,7 @@ was then able to remove constraints on outermost containers and expand the pages
 to the full width of the screen.
 
 <figure class="figure--image">
-  <img src="{{ site.url }}/assets/projects/full_width-two_panes-redesigned.png"
+  <img src="{{ site.baseurl }}/assets/projects/full_width-two_panes-redesigned.png"
   alt="The updated two-pane layout removed much of the visual chrome.">
   <figcaption>The updated two-pane layout removed much of the visual chrome.</figcaption>
 </figure>

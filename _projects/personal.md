@@ -20,7 +20,7 @@ While attending a Swift developer conference, a team member requested a “snazz
 team shirt” to explain our product.
 
 <figure class="figure--image">
-  <img src="{{ site.url }}/assets/projects/cxalloy_snazzy_shirt-slack.png">
+  <img src="{{ site.baseurl }}/assets/projects/cxalloy_snazzy_shirt-slack.png">
   <figcaption>The initial request for a team shirt took place over Slack.</figcaption>
 </figure>
 
