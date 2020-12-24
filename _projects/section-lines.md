@@ -3,7 +3,7 @@ layout: project
 title: "Section Lines"
 categories: product
 date: May 2015
-hero: /assets/projects/section_lines-screenshot.png
+hero: section_lines-screenshot.png
 heroColor: 176A9E
 role: "Design and development of new layout for checklist section and test
 attempt lines. Improve interactions and create new icons."

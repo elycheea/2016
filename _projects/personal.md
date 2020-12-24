@@ -2,7 +2,7 @@
 layout: project
 title: "Just for Fun"
 categories: miscellaneous
-hero: /assets/projects/birthday_itinerary-hero.png
+hero: birthday_itinerary-hero.png
 heroColor: 58705C
 noDate: true
 skills:

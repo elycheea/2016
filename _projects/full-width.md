@@ -3,7 +3,7 @@ layout: project
 title: "Full Width"
 categories: product
 date: December 2015
-hero: /assets/projects/full_width-screenshot.png
+hero: full_width-screenshot.png
 heroColor: 176A9E
 role: "Redesign and development of new layout for entire product in order to
 provide more vertical real estate to content instead of decoration."
