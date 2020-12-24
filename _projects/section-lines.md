@@ -33,7 +33,7 @@ In order to accommodate the additional details in a compact interface, we needed
 to take advantage of the horizontal space as well as improve the visual
 hierarchy of the lines. The engineers using our product often emphasize the
 importance of viewing as many lines at a time for scannability and efficiency.
-The product manager and I discussed and sketched **[a few ideas]({{site.url}}/assets/projects/section_lines-sketches.pdf)**
+The product manager and I discussed and sketched **[a few ideas]({{site.baseurl}}/assets/projects/section_lines-sketches.pdf)**
 that would hopefully improve readability and add more detail to each line
 without taking away too much from the vertical real estate.
 
@@ -45,10 +45,10 @@ two distinct fields.
 
 <figure class="figure--image">
   <div class="figures--2x1">
-    <img src="{{ site.url }}/assets/projects/section_lines-3.1.png">
-    <img src="{{ site.url }}/assets/projects/section_lines-5.1.png">
+    <img src="{{ site.baseurl }}/assets/projects/section_lines-3.1.png">
+    <img src="{{ site.baseurl }}/assets/projects/section_lines-5.1.png">
   </div>
-  <img src="{{ site.url }}/assets/projects/section_lines-6.2.png">
+  <img src="{{ site.baseurl }}/assets/projects/section_lines-6.2.png">
   <figcaption>Selected layouts from initial round of iterations in Sketch.</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ concept that would use progressive disclosure to show respondent details only
 when users requested the information.
 
 <figure class="figure--image">
-  <img src="{{ site.url }}/assets/projects/section_lines-expanded.png">
+  <img src="{{ site.baseurl }}/assets/projects/section_lines-expanded.png">
   <figcaption>Expanded lines show details of who answered the the line, note, or
   attribute and when the answer was provided.</figcaption>
 </figure>
@@ -86,12 +86,12 @@ descriptions, and the separation of notes and attributes. In some cases, the new
 design can even achieve more lines in the same space as the initial design.
 
 <figure class="figure--image">
-    <img src="{{ site.url }}/assets/projects/section_lines-v4.png">
+    <img src="{{ site.baseurl }}/assets/projects/section_lines-v4.png">
     <figcaption>Checklist section lines before the redesign.</figcaption>
 </figure>
 
 <figure class="figure--image">
-  <img src="{{ site.url }}/assets/projects/section_lines-final.png">
+  <img src="{{ site.baseurl }}/assets/projects/section_lines-final.png">
   <figcaption>The final implementation of checklist section lines.</figcaption>
 </figure>
 

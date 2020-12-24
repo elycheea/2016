@@ -7,7 +7,7 @@ permalink: /work/
 <hgroup class="intro">
   <h1 class="intro__title">Work</h1>
   <h2 class="intro__subtitle">A collection of my favorite projects over the
-  past few years.</h2>
+    past few years.</h2>
 </hgroup>
 
 <section class="content__section">
@@ -16,19 +16,19 @@ permalink: /work/
     {% assign draft_projects = site.projects | where: "published","draft" %}
 
     {% for project in published_projects %}
-      <div class="card-item">
-        <a href="{{ project.url | prepend: site.baseurl }}">
-          <div class="card__bg" style="background-color: #{{project.heroColor}}">
-            <img src="{{ project.hero }}" />
-          </div>
-          <div class="card__cover">
-            <span class="meta-categories">{{ project.categories | join: ', ' }}</span>
-            <h2>
-              {{ project.title | escape }}
-            </h2>
-          </div>
-        </a>
-      </div>
+    <div class="card-item">
+      <a href="{{ project.url | prepend: site.baseurl }}">
+        <div class="card__bg" style="background-color: #{{project.heroColor}}">
+          <img src="{{site.baseurl}}/assets/projects/{{ project.hero }}" />
+        </div>
+        <div class="card__cover">
+          <span class="meta-categories">{{ project.categories | join: ', ' }}</span>
+          <h2>
+            {{ project.title | escape }}
+          </h2>
+        </div>
+      </a>
+    </div>
     {% endfor %}
 
     {% for project in draft_projects %}

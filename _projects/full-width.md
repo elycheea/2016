@@ -27,7 +27,7 @@ Version 4. This layout is used throughout the site, including the sections for
 maintaining people, various assets, and templates.
 
 <figure class="figure--image">
-  <img src="{{ site.url }}/assets/projects/full_width-two_panes.png"
+  <img src="{{ site.baseurl }}/assets/projects/full_width-two_panes.png"
   alt="The two-pane layout as shown from the locations and progress reports sections.">
   <figcaption>The two-pane layout as shown from the locations and progress reports
   sections.</figcaption>
@@ -67,13 +67,13 @@ into two rows took away from the increased vertical real estate we wanted to
 achieve, we felt that the increase in clarity warranted the change.
 
 <figure class="figure--image">
-  <img src="{{ site.url }}/assets/projects/full_width-list_view.png"
+  <img src="{{ site.baseurl }}/assets/projects/full_width-list_view.png"
   alt="The list view before and after the redesign.">
   <figcaption>The list view before and after the redesign.</figcaption>
 </figure>
 
 <figure class="figure--image">
-  <img src="{{ site.url }}/assets/projects/full_width-detail_view.png"
+  <img src="{{ site.baseurl }}/assets/projects/full_width-detail_view.png"
   alt="The detail views before and after the redesign.">
   <figcaption>The detail views before and after the redesign also included
   changes to their menus.</figcaption>
@@ -98,7 +98,7 @@ checkboxes which makes subscribing and unsubscribing from emails both easier and
 more discoverable.
 
 <figure class="figure--image">
-  <img src="{{ site.url }}/assets/projects/full_width-profile.png"
+  <img src="{{ site.baseurl }}/assets/projects/full_width-profile.png"
   alt="The redesign of the profile page exposes options for email settings.">
   <figcaption>The redesign of the profile page exposes options for email settings.</figcaption>
 </figure>

@@ -28,7 +28,7 @@ I quickly got to work on his request. Unfortunately, we did not send the shirts
 to print. Yet.
 
 <figure class="figure--small">
-  <img src="{{ site.url }}/assets/projects/cxalloy_snazzy_shirt.png">
+  <img src="{{ site.baseurl }}/assets/projects/cxalloy_snazzy_shirt.png">
   <figcaption>A quick design from Sketch.</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ For an upcoming birthday celebration, a friend _strongly encouraged_ me to make
 a program for the girls’ day out. I, of course, obliged.
 
 <figure class="figure--image">
-  <img src="{{ site.url }}/assets/projects/birthday_itinerary.png"
+  <img src="{{ site.baseurl }}/assets/projects/birthday_itinerary.png"
   alt="A birthday schedule in three colors.">
   <figcaption>A fun birthday schedule in three colors.</figcaption>
 </figure>
